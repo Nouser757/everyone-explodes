@@ -57,10 +57,11 @@ from WIP.presidentialelections import presidentialElections
 from WIP.count69420 import count69420
 from WIP.synapsecipher import synapseCipher
 from WIP.wavetapping import wavetapping
+from WIP.gameofants import gameOfAnts
 
 modules = {"EDGE": setedge, "B": button, "W": wires, "Kp": keypad, "S": simon, "Mem": memory, "Wof": whosOnFirst, "Mz": maze, "Mc": morse, "Wseq": wireSeq, 
            "P": password, "Cw": compWires, "Cg": cooking, "Re": resistors, "Dec": decimation, "Cs": characterShift, "Cf": colorFlash, "Ftl": followTheLeader,
-           "Lede": ledEncryption, "Uarr": rainbowArrows, 'Pe': presidentialElections, "Ct69": count69420, 'Scip': synapseCipher, 'Wv': wavetapping}
+           "Lede": ledEncryption, "Uarr": rainbowArrows, 'Pe': presidentialElections, "Ct69": count69420, 'Scip': synapseCipher, 'Wv': wavetapping, 'ant': gameOfAnts}
 
 while True:
     clear()

@@ -1,3 +1,5 @@
+#mostly done, bugfixes needed
+
 from ktools import Edge, a1z26, rangify
 import pygame
 import math
@@ -1869,14 +1871,15 @@ def grey(edge: Edge, prev, used, flip):
   return prev
 
 
-def updateInput(screen, used):
-  for i, c in enumerate(colors): pygame.draw.rect(screen, c[0] if used[i//4][i%4] == '0' else (255,255,255), pygame.Rect((29+(229*(i%4)), 29+(229*(i//4)), 200, 200)))
-  pygame.display.flip()
-
 grid = [red, orange, yellow, chartreuse, lime, green, teal, cyan, turquoise, blue, indigo, purple, violet, magenta, pink, grey]
 
 def wavetapping(edge: Edge):
   used = [['0','0','0','0'],['0','0','0','0'],['0','0','0','0'],['0','0','0','0']]
+
+  def updateInput(screen):
+    for i, c in enumerate(colors): pygame.draw.rect(screen, c[0] if used[i//4][i%4] == '0' else (255,255,255), pygame.Rect((29+(229*(i%4)), 29+(229*(i//4)), 200, 200)))
+    pygame.display.flip()
+  
   pygame.init()
   screen = pygame.display.set_mode((945, 945))
   pygame.display.set_caption(title[3])

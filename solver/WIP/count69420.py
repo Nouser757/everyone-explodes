@@ -1,3 +1,5 @@
+#doesnt work, too lazy to fix
+
 from ktools import Edge
 
 def rdzanu(n): return ((str(n).count('4')+str(n).count('7')) % 2 == 1)
@@ -29,7 +31,8 @@ def kabewm(n):
   n = str(n)
   while len(n) != 1: n = str(sum([int(x) for x in n]))
   return (n % 2 == 0)
-def cooldoom(n): 
+def cooldoom(n):
+  pass
 
 
 def count69420(edge: Edge):

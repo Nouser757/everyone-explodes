@@ -1,3 +1,5 @@
+#not done, didnt finish cause manual had an ambiguity
+
 from ktools import Edge, a1z26
 from sympy import isprime
 from numpy import base_repr
@@ -46,5 +48,3 @@ def synapseCipher(edge: Edge):
 
   #step 3: double square rotation
   
-
-synapseCipher("cum")

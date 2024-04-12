@@ -1,3 +1,5 @@
+#i forgor
+
 from ktools import Edge, rangify
 
 northtable = [["SE", "NE", "W", "NW", "N", "S", "S", "SW", "S", "SE"], 

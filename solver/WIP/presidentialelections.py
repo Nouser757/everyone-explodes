@@ -1,3 +1,5 @@
+#i forgor
+
 from ktools import Edge
 from num2words import num2words
 
@@ -25,7 +27,7 @@ def findMethod(edge: Edge):
     bracket = [[["FPTP", "LPTP"], ["IR", "Coomb"]], [["BC", "AV"], ["STV", "Condor"]]]
     bracket = [[x[0] if methodVals[x[0]] >= methodVals[x[1]] else x[1] for x in y] for y in bracket]
     bracket = [x[0] if methodVals[x[0]] <= methodVals[x[1]] else x[1] for x in bracket]
-    bracket = bracket[0] if num2words(methodVals[bracket[0]]) <= num2words(methodVals[bracket[1]]) else bracket[1]
+    bracket = bracket[0] if num2words(methodVals[bracket[0]]%20) <= num2words(methodVals[bracket[1]]%20) else bracket[1]
 
     return bracket
 
@@ -41,3 +43,4 @@ def presidentialElections(edge: Edge):
         "Condor": condorcet
     }
     method = findMethod(edge)
+    
