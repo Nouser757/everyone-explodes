@@ -1,7 +1,6 @@
 from ktools import Edge
 
 def decimation(edge: Edge):
-    # sourcery skip: list-comprehension, merge-list-appends-into-extend, move-assign-in-block
     #stage 1
     a = input("Enter top display > ")
     b = input("Enter bottom display > ")
